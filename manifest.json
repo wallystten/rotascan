@@ -1,0 +1,8 @@
+{
+  "name": "RotaScan",
+  "short_name": "RotaScan",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#0A5ED7",
+  "theme_color": "#0A5ED7"
+}
