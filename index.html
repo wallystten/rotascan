@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RotaScan</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#0A5ED7">
+</head>
+<body>
+
+  <header>
+    <h1>RotaScan</h1>
+    <p>Rotas inteligentes para entregas</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <input type="text" id="endereco" placeholder="Digite o endereço completo">
+      <button onclick="adicionarEndereco()">Adicionar endereço</button>
+    </section>
+
+    <section class="card">
+      <h2>Endereços</h2>
+      <ul id="lista"></ul>
+    </section>
+
+    <button class="rota" onclick="gerarRota()">Gerar rota no Google Maps</button>
+  </main>
+
+  <script src="script.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js');
+    }
+  </script>
+
+</body>
+</html>
